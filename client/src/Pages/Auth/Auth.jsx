@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./Auth.css";
 import icon from "../../assets/icon.svg.png";
 import AboutAuth from "./AboutAuth";
 import { signup, login } from "../../actions/auth";
+import Login from "../Login";
+
 const Auth = () => {
   const [isSignup, setIsSignup] = useState(false);
   const [name, setName] = useState("");
@@ -131,9 +133,14 @@ const Auth = () => {
             className="handle-switch-btn"
             onClick={handleSwitch}
           >
-            {isSignup ? "Log in" : "sign up"}
+            {isSignup ? "Log in" : "sign up or"}
           </button>
         </p>
+        <Link to="/Login">
+          <button type="submit" className="auth-btn-2">
+            Login with number
+          </button>
+        </Link>
       </div>
     </section>
   );

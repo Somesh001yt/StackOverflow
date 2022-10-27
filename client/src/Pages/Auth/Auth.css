@@ -76,6 +76,23 @@
   background-color: #018ce3;
 }
 
+.auth-btn-2 {
+  margin-top: 0px;
+  padding: 5px 3px;
+  background-color: #009dff;
+  border: solid 1px #009dff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.auth-btn-2:hover {
+  background-color: #018ce3;
+}
+
 .handle-switch-btn {
   background-color: transparent;
   color: #007ac6;
